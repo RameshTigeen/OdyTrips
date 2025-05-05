@@ -1,5 +1,5 @@
 {
-  "name": "OdyTrips",
+  "name": "odytrips",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -7,11 +7,29 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "createbundle": "npx react-native build-android --mode=release",
+    "testbundle": "npm run android --mode=release"
   },
   "dependencies": {
+    "@react-native-community/netinfo": "^11.4.1",
+    "@react-navigation/native": "^7.1.5",
+    "@react-navigation/native-stack": "^7.3.9",
     "react": "19.0.0",
-    "react-native": "0.79.2"
+    "react-native": "0.79.1",
+    "react-native-audio-recorder-player": "^3.6.12",
+    "react-native-blob-util": "^0.21.2",
+    "react-native-bootsplash": "^6.3.4",
+    "react-native-device-info": "^14.0.4",
+    "react-native-fs": "^2.20.0",
+    "react-native-gesture-handler": "^2.25.0",
+    "react-native-pdf": "^6.7.7",
+    "react-native-permissions": "^5.4.0",
+    "react-native-safe-area-context": "^5.2.0",
+    "react-native-screens": "^4.10.0",
+    "react-native-svg": "^15.11.1",
+    "react-native-webview": "^13.13.5",
+    "rn-fetch-blob": "^0.12.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -20,10 +38,10 @@
     "@react-native-community/cli": "18.0.0",
     "@react-native-community/cli-platform-android": "18.0.0",
     "@react-native-community/cli-platform-ios": "18.0.0",
-    "@react-native/babel-preset": "0.79.2",
-    "@react-native/eslint-config": "0.79.2",
-    "@react-native/metro-config": "0.79.2",
-    "@react-native/typescript-config": "0.79.2",
+    "@react-native/babel-preset": "0.79.1",
+    "@react-native/eslint-config": "0.79.1",
+    "@react-native/metro-config": "0.79.1",
+    "@react-native/typescript-config": "0.79.1",
     "@types/jest": "^29.5.13",
     "@types/react": "^19.0.0",
     "@types/react-test-renderer": "^19.0.0",
